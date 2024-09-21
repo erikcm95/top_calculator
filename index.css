@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+html {
+  background-color: rgb(66, 63, 63);
+  color: white;
+  font-family: "Rubik";
+}
+
+.calculator {
+  width: 400px;
+  height: 650px;
+  background-color: black;
+  margin: 50px auto;
+}
+
+.screen {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  background-color: #1F2833;
+  color: #c5c6c7;
+  display:flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.gui {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.gui button {
+  font-size: 20px;
+  font-weight: 550;
+  aspect-ratio: 1 / 1;
+  width: 75px;
+  height: same-as-width;
+  margin: 7.5px 0px;
+  border-radius: 15px;
+}
+
+.num {
+  background-color: hsla(177, 40%, 45%, 80%);
+  
+}
+
+.funBtn {
+  background-color: hsla(207, 100%, 60%, 0.452);
+  color: hsl(0, 0%, 100%, 70%);
+}
+
+#equalBtn {
+  background-color: hsl(209, 92%, 59%);
+}

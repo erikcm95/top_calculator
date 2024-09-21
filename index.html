@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOD Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <h1 id="display">0</h1>
+    </div>
+
+    <div class="gui">
+      <button class="funBtn" id="piBtn" onclick="displayPi()">pi</button>
+      <button class="funBtn" id="squareBtn" onclick="storeOp(this.textContent); storeN()">x^y</button>
+      <button class="funBtn" id="percBtn" onclick="storeOp(this.textContent); storeN()">%</button>
+      <button class="funBtn" id="divBtn"  onclick="storeOp(this.textContent); storeN()">/</button>
+      <button class="num" id="num7" onclick="displayF(this.textContent)">7</button>
+      <button class="num" id="num8"  onclick="displayF(this.textContent)">8</button>
+      <button class="num" id="num9" onclick="displayF(this.textContent)">9</button>
+      <button class="funBtn" id="multBtn" onclick="storeOp(this.textContent); storeN()">x</button>
+      <button class="num" id="num4" onclick="displayF(this.textContent)">4</button>
+      <button class="num" id="num5" onclick="displayF(this.textContent)">5</button>
+      <button class="num" id="num6" onclick="displayF(this.textContent)">6</button>
+      <button class="funBtn" id="addBtn" onclick="storeOp(this.textContent); storeN()">+</button>
+      <button class="num" id="num1" onclick="displayF(this.textContent)">1</button>
+      <button class="num" id="num2" onclick="displayF(this.textContent)">2</button>
+      <button class="num" id="num3" onclick="displayF(this.textContent)">3</button>
+      <button class="funBtn" id="subBtn" onclick="storeOp(this.textContent); storeN()">-</button>
+      <button class="funBtn" id="decBtn" onclick="displayDec()">.</button>
+      <button class="num" id="0" onclick="displayF(this.textContent)">0</button>
+      <button class="funBtn" id="clearBtn" onclick="clearD()">C</button>
+      <button id="equalBtn" onclick="operate(this.textContent)">=</button>
+    </div>
+
+
+  </div>
+  
+
+  <script src="calculator.js">
+  </script>
+</body>
+</html>
